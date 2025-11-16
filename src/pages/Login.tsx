@@ -154,10 +154,10 @@ const LoginPage: React.FC = () => {
             <button
               type="submit"
               // 11. Disable nút khi đang loading
-              disabled={mutation.isLoading}
+              //disabled={mutation.isLoading}
               className="w-full rounded-md bg-indigo-600 p-3 text-white transition duration-200 hover:bg-indigo-700 disabled:cursor-not-allowed disabled:bg-indigo-400"
             >
-              {mutation.isLoading ? 'Logging in...' : 'Login'}
+              {/* {mutation.isLoading ? 'Logging in...' : 'Login'} */}
             </button>
           </div>
         </form>
