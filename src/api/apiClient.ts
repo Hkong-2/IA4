@@ -56,7 +56,7 @@ const onRefreshed = (token: string) => {
 };
 
 // Hàm xử lý khi refresh token thất bại
-const onRefreshFailed = (error: any) => {
+const onRefreshFailed = (_error: any) => {
     refreshSubscribers.forEach((callback) => callback(null)); // Gửi tín hiệu thất bại
     refreshSubscribers = []; // Xóa hàng đợi
 
